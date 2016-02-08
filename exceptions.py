@@ -1,6 +1,18 @@
-my_list = [1,2,3,5]
+inp = input("Type a number here: ")
+
+floatie = str(inp)
+notNum = True
+
+while notNum:
+    try:
+        inp = float(inp)
+        notNum = False
+    except ValueError:
+        print("'" + floatie + "'" + " isn't a number you uncultured swine!")
+        inp = input("Type a number here: ")
+
 
 try:
-x = my_list[5]
-except IndexError:
-    print("Out of Range")
+    print(inp/0)
+except ZeroDivisionError:
+    print("Divided by zero!")
