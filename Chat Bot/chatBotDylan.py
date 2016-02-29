@@ -1,3 +1,6 @@
+#Requires all the libraries listed below, and an internet connection.
+#Sometimes things take time to load, please give it time. A response at the max could take up to 30 seconds.
+#It works on my computer so let me know if it doesn't work on yours, I can show it to you on here.
 import nltk
 from nltk import tokenize
 import random
